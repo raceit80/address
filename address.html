@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
+    <script>
+        var liveaddress = $.LiveAddress({
+        key: "23254032259428121",
+        debug: false,
+        target: "US",
+        addresses: [{
+          address1: '#street-address',
+          locality: '#city',
+          administrative_area: '#state',
+
+          }]
+        });
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </head>
+  
+  <body>
+        <div class="container">
+          <div class="row">
+          <div class ="col-xs-12 col-md-12">
+            <hr>
+            <h1>Provide your U.S. legal address</h1>
+            <form method ="post" action="">
+
+              <label>Street:</label>
+              <input type="text" id="street-address" name="street-address" class="form-control">
+              <label>City:</label>
+              <input type="text" id="city" name="city" class="form-control">
+              <label>State:</label>
+              <input type="text" id="state" name="state" class="form-control">
+              <label>Zip code:</label>
+              <input type="text" id="zip" name="zip" class="form-control">
+
+              <hr>
+
+              <div class="btn-group">
+               <button type="button" class="btn btn-primary"  aria-haspopup="true" aria-expanded="false">
+                  Continue 
+                </button>
+              </div>
+
+            </form>
+          </div>
+          </div>
+        </div>
+        
+
+  </body>
+
+  </html>
